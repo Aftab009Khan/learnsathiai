@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSathi AI Workspace</title>
+    <!-- Include Puter Free Multi-Modal Vision Processing Engine Script Layer -->
+    <script src="https://puter.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Full Screen Loading Blocking Animation Element Layout -->
+    <div id="loadingOverlay" class="overlay hidden">
+        <div class="spinner-box">
+            <div class="loader"></div>
+            <p id="loadingMsg">Querying Global Real-Time Cloud Clusters...</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="brand">
+                <span class="logo">🎓</span>
+                <div>
+                    <h1>LearnSathi AI</h1>
+                    <p>Real-Time Educational Workspace Pipeline Engine</p>
+                </div>
+            </div>
+            <div class="status-badge">Open API Mesh Active</div>
+        </header>
+
+        <main class="grid">
+            <!-- Functional Interaction Pane Left view -->
+            <section class="pane">
+                <div class="card">
+                    <div class="flex-row">
+                        <h3>📷 1. Input Textbook Material</h3>
+                        <button id="demoBtn" class="badge-btn">⚡ Load Demo Text</button>
+                    </div>
+                    
+                    <div class="camera-simulation">
+                        <video id="webcam" autoplay playsinline class="hidden"></video>
+                        <div id="cameraPlaceholder" class="cam-box">Camera Stream Offline</div>
+                        <button id="toggleCamBtn" class="cam-action">Activate Device Stream</button>
+                    </div>
+
+                    <div class="upload-box">
+                        <label for="imageUpload" class="upload-label">📁 Or Upload Page Screenshot (PNG/JPG)</label>
+                        <input type="file" id="imageUpload" accept="image/*">
+                    </div>
+
+                    <p class="meta-txt">Processed/Extracted Script Core Area (Completely Editable):</p>
+                    <textarea id="ocrBox" placeholder="Type concepts, run your camera hardware capture sequence, or select image file uploader targets..."></textarea>
+                    
+                    <label class="label" for="lang">Preferred Language Medium:</label>
+                    <select id="lang">
+                        <option value="Hindi">Hindi (हिंदी)</option>
+                        <option value="Marathi">Marathi (मराठी)</option>
+                        <option value="Telugu">Telugu (తెలుగు)</option>
+                        <option value="Tamil">Tamil (தமிழ்)</option>
+                    </select>
+                    
+                    <button id="submitTextBtn" class="btn-main">✨ Execute Textbook RealTime Mapping</button>
+                </div>
+
+                <div class="card hidden" id="quizWidget">
+                    <h3>📝 3. Interactive Student Assessment Form</h3>
+                    <p class="quiz-bubble" id="quizText"></p>
+                    <textarea id="studentAnswerBox" placeholder="Type or paste your analytical answer here for real-time grading..."></textarea>
+                    <button id="evaluateBtn" class="btn-green">📊 Evaluate Answers with RealTime Logs</button>
+                </div>
+            </section>
+
+            <!-- Functional Interaction Pane Right view -->
+            <section class="pane">
+                <div class="card empty" id="emptyState">
+                    <span class="icon-bounce">🤖</span>
+                    <h4>Awaiting Trigger Inputs</h4>
+                    <p>Activate any text parsing workflow paths on the left to fire network tracking pipelines.</p>
+                </div>
+
+                <div class="card hidden" id="lessonWidget">
+                    <div class="flex-row">
+                        <h3>📖 Real-Time Localized Lesson Module</h3>
+                        <button id="ttsBtn" class="badge-btn">🔊 Play Voice Audio</button>
+                    </div>
+                    <div class="output-display" id="lessonText"></div>
+                </div>
+
+                <div class="card hidden" id="evaluationWidget">
+                    <h3>📊 AI Structural Grading Metric Feedback</h3>
+                    <div class="output-display border-green" id="evaluationText"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
